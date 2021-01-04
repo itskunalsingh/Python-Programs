@@ -1,0 +1,18 @@
+def Palindrome(num):
+    if num < 0:
+        print(" Invalid number ")
+    elif num == 0:
+        print(" Zero ")
+    else:
+        while num > 0:
+            rev = 0
+            a = num % 10
+            rev = rev * 10 + a
+            num = num/10
+
+
+        if num == rev:
+            print(' Palindrome! ')
+        else:
+            print(" Not Palindrome! ")
+Palindrome(25652)
